@@ -1,0 +1,150 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #0b1119;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+._break {
+    display: block;
+}
+
+.container {
+    @media @mobile {
+        width: 290px;
+        margin: 0 auto;
+    }
+    @media @tablet {
+        width: 730px;
+        padding: 0 30px;
+    }
+    @media @desktop {
+        width: 1170px;
+    }
+}
+
+._hide {
+    &-mobile {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &-tablet {
+        @media (min-width: 767px) and (max-width: 1169px) {
+            display: none;
+        }
+    }
+    &-desktop {
+        @media (min-width: 1170px) {
+            display: none;
+        }
+    }
+}
+
+input,
+form,
+button {
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+input,
+button {
+    letter-spacing: 1.2px;
+    border: none;
+    @media @mobile {
+        height: 45px;
+    }
+    @media @tablet {
+        height: 54px;
+    }
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+form {
+    position: relative;
+    z-index: 300;
+    &._introduction {
+        @media @mobile {
+            margin-top: 264px;
+        }
+        @media @tablet {
+            display: flex;
+            margin-top: 48px;
+        }
+        @media @desktop {
+            margin-top: 63px;
+        }
+    }
+    &._download-now {
+        @media @mobile {
+            margin-top: 39px;
+        }
+        @media @tablet {
+            display: flex;
+            margin: 44px 0 0 0;
+            justify-content: center;
+        }
+        @media @desktop {
+            margin-top: 42px;
+        }
+    }
+}
+
+input {
+    text-align: center;
+    border: none;
+    @media @tablet {
+        width: 212px;
+    }
+    @media @desktop {
+        text-align: left;
+        padding-left: 20px;
+        width: 355px;
+    }
+    &._download-now {
+        @media @tablet {
+            text-align: left;
+            padding-left: 20px;
+            width: 353px;
+        }
+    }
+}
+
+button {
+    background-color: #f99406;
+    color: white;
+    @media @tablet {
+        width: 196px;
+    }
+    @media @desktop {
+        width: 197px;
+    }
+    &._download-now {
+        @media @tablet {
+            width: 196px;
+        }
+    }
+}
+
+button:hover {
+    background-color: #f7a83a;
+}
+
+button:focus {
+    background-color: #db8000;
+}

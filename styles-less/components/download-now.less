@@ -1,0 +1,142 @@
+.download-now {
+    position: relative;
+    @media @mobile {
+        margin-top: 81px;
+    }
+    @media @tablet {
+        margin-top: 87px;
+        margin-right: 13px;
+    }
+    @media @desktop {
+        margin-top: 290px;
+        margin-right: 31px;
+    }
+    &::before {
+        @media @mobile {
+            position: absolute;
+            content: '';
+            top: -81px;
+            left: -15px;
+            width: 320px;
+            height: 391px;
+            background: url('./images/download-now-bg-mob.png') no-repeat;
+        }
+        @media @tablet {
+            top: -74px;
+            left: 8px;
+            width: 716px;
+            height: 624px;
+            background: url('./images/download-now-bg-tablet.png') no-repeat;
+        }
+        @media @desktop {
+            top: -165px;
+            left: 131px;
+            width: 896px;
+            height: 782px;
+            background: url('./images/download-now-bg-desktop.png') no-repeat;
+        }
+    }
+    &__text {
+        text-align: center;
+        &:nth-child(1) {
+            @media @mobile {
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                line-height: 30px;
+            }
+            @media @tablet {
+                font-size: 28px;
+                letter-spacing: 1.4px;
+            }
+            @media @desktop {
+                font-size: 40px;
+                letter-spacing: 1.69px;
+            }
+        }
+        &:nth-child(2) {
+            @media @mobile {
+                margin: 8px 0 0 4px;
+                line-height: 24px;
+                font-size: 17px;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 0.2px;
+                color: #f99406;
+                text-shadow: 0 0 10px #f99406;
+            }
+            @media @tablet {
+                margin-top: 15px;
+                margin-right: 4px;
+                letter-spacing: 0.2px;
+            }
+            @media @desktop {
+                margin: 22px 1px 0 0;
+                font-size: 17px;
+                letter-spacing: 1.5px;
+            }
+        }
+        &:nth-child(3) {
+            @media @mobile {
+                margin: 32px -6px 0 0;
+                font-weight: 300;
+                letter-spacing: 0.85px;
+                color: #a5a6a7;
+            }
+            @media @tablet {
+                margin: 62px 0 0 0;
+            }
+            @media @desktop {
+                margin: 75px -1px 0 0;
+                font-size: 18px;
+                letter-spacing: 0.9px;
+            }
+        }
+    }
+    &__timer {
+        @media @mobile {
+            display: flex;
+            margin-top: 26px;
+            justify-content: space-between;
+        }
+        @media @tablet {
+            width: 535px;
+            margin: 52px auto 0 auto;
+        }
+        &-field {
+            @media @mobile {
+                width: 63px;
+                text-align: center;
+            }
+            @media @tablet {
+                width: 120px;
+            }
+            &-time {
+                @media @mobile {
+                    padding-bottom: 8px;
+                    font-size: 29px;
+                    border-bottom: 1px solid white;
+                }
+                @media @tablet {
+                    font-size: 59px;
+                }
+            }
+            &-type {
+                @media @mobile {
+                    padding-top: 7px;
+                    font-size: 12px;
+                    font-weight: 300;
+                    letter-spacing: 0.7px;
+                    color: #a5a6a7;
+                }
+                @media @tablet {
+                    padding-top: 12px;
+                    font-size: 16px;
+                }
+                @media @tablet {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

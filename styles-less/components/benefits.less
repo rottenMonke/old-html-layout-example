@@ -1,0 +1,218 @@
+.benefits {
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 64px;
+    }
+    @media @tablet {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 120px;
+    }
+    @media @desktop {
+        margin-top: 233px;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media @mobile {
+            max-width: 183px;
+        }
+        @media @tablet {
+            align-items: flex-start;
+        }
+        &:nth-child(1) {
+            @media @mobile {
+                margin-top: 71px;
+            }
+            @media @desktop {
+                margin-top: 70px;
+                margin-left: 110px;
+            }
+        }
+        &:nth-child(2) {
+            @media @mobile {
+                margin-top: 117px;
+            }
+            @media @tablet {
+                margin-top: 71px;
+                margin-left: 69px;
+            }
+            @media @desktop {
+                margin-top: 70px;
+                margin-left: 184px;
+            }
+        }
+        &:nth-child(3) {
+            @media @mobile {
+                margin-top: 95px;
+            }
+            @media @tablet {
+                margin-top: 71px;
+                margin-left: 65px;
+            }
+            @media @desktop {
+                margin-top: 70px;
+                margin-left: 190px;
+            }
+        }
+        &_fast:before {
+            @media @mobile {
+                position: absolute;
+                content: '';
+                top: -71px;
+                left: 34px;
+                width: 115px;
+                height: 71px;
+                z-index: 300;
+                background: url('./images/icon__fast.png') 0 bottom no-repeat;
+            }
+            @media @tablet {
+                top: -71px;
+                left: 0px;
+            }
+            @media @desktop {
+                top: -70px;
+                left: -3px;
+            }
+        }
+        &_coins:before {
+            @media @mobile {
+                position: absolute;
+                content: '';
+                top: -68px;
+                left: 58px;
+                width: 67px;
+                height: 67px;
+                z-index: 300;
+                background: url('./images/icon__coins.png');
+                background-repeat: no-repeat;
+            }
+            @media @tablet {
+                top: -61px;
+                left: -1px;
+                width: 68px;
+                height: 61px;
+                background: url('./images/icon__bag.png');
+            }
+            @media @desktop {
+                top: -60px;
+                left: 0px;
+            }
+        }
+        &_bag:before {
+            @media @mobile {
+                position: absolute;
+                content: '';
+                top: -64px;
+                left: 30px;
+                width: 68px;
+                height: 61px;
+                z-index: 300;
+                background: url('./images/icon__bag.png');
+                background-repeat: no-repeat;
+            }
+            @media @tablet {
+                top: -63px;
+                left: 1px;
+                width: 67px;
+                height: 67px;
+                z-index: 300;
+                background: url('./images/icon__coins.png');
+            }
+            @media @desktop {
+                top: -62px;
+                left: -1px;
+            }
+        }
+    }
+    &__header {
+        position: relative;
+        @media @mobile {
+            margin-top: 27px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        @media @desktop {
+            font-size: 18px;
+        }
+        &._line-long::before {
+            @media @desktop {
+                position: absolute;
+                content: '';
+                top: 10px;
+                left: -150px;
+                width: 111px;
+                height: 2px;
+                background: url('./images/line.png');
+                background-repeat: no-repeat;
+            }
+        }
+        &._line-long::after {
+            @media @desktop {
+                position: absolute;
+                content: '';
+                top: 10px;
+                left: 229px;
+                width: 112px;
+                height: 2px;
+                background: url('./images/line.png');
+                background-repeat: no-repeat;
+            }
+        }
+        &._line-short-before::before {
+            @media @desktop {
+                position: absolute;
+                content: '';
+                top: 11px;
+                left: -111px;
+                width: 79px;
+                height: 2px;
+                background: url('./images/line.png') no-repeat;
+            }
+        }
+        &._line-short-after::after {
+            @media @desktop {
+                position: absolute;
+                content: '';
+                top: 10px;
+                left: 197px;
+                width: 93px;
+                height: 2px;
+                background: url('./images/line.png') no-repeat;
+            }
+        }
+    }
+    &__description {
+        @media @mobile {
+            padding-top: 10px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.9px;
+            color: #a5a6a7;
+        }
+        @media @tablet {
+            text-align: left;
+        }
+        @media @desktop {
+            padding-top: 6px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &_coins {
+            @media @tablet {
+                margin-right: -2px;
+            }
+            @media @desktop {
+                margin-right: -24px;
+            }
+        }
+    }
+}

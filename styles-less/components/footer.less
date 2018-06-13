@@ -1,0 +1,34 @@
+.footer {
+    @media @mobile {
+        margin-top: 81px;
+        padding-bottom: 20px;
+        background-color: #080d13;
+    }
+    @media @tablet {
+        margin-top: 172px;
+    }
+    @media @desktop {
+        margin-top: 238px;
+    }
+    &__text {
+        @media @mobile {
+            width: 290px;
+            margin: 0 auto;
+            padding-top: 21px;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+        }
+        @media @tablet {
+            width: auto;
+            margin-left: 2px;
+            padding-top: 35px;
+            font-size: 14px;
+            text-align: left;
+            letter-spacing: 0.61px;
+        }
+        @media @desktop {
+            margin-left: -1px;
+        }
+    }
+}
