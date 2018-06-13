@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="introduction _bg">
+            <div class="introduction__text  _yellow _yellow-text-shadow _light _small">ВИДЕОКУРС</div>
+            <div class="introduction__text _uppercase _big">Вступление в товарный арбитраж трафика</div>
+            <div class="introduction__text _light _grey _medium">Получи бесплатный видеокурс<span class="_break"></span>  по товарному арбитражу для новичков</div>
+            <form class="_introduction" action="">
+                <input type="text" placeholder="введите ваш email">
+                <button type="submit">Скачать видео курс</button>
+            </form>
+        </div>
+        <div class="benefits">
+            <div class="benefits__item benefits__item_fast">
+                <div class="benefits__header  _line-short-before">Быстро</div>
+                <div class="benefits__description">вольешься в нишу интернет продаж</div>
+            </div>
+            <div class="benefits__item benefits__item_coins">
+                <div class="benefits__header _line-long">Овладеешь</div>
+                <div class="benefits__description benefits__description_coins">наиболее выгодной<span class="_break"></span>и востребованной профессией 2016 года</div>
+            </div>
+            <div class="benefits__item benefits__item_bag">
+                <div class="benefits__header _line-short-after">Зарабатывай</div>
+                <div class="benefits__description">деньги в любой<span class="_break"></span>точке мира</div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about__text-wrapper">
+                    <div class="about__text _uppercase _yellow _yellow-text-shadow _light">автор Видеокурса</div>
+                    <div class="about__text _uppercase">Артур Гарнаев</div>
+                    <div class="about__text _light _grey">Арбитражник, рекламодатель,<span class="_break"></span>интернет-предпрениматель</div>
+                    <div class="about__text _light _grey">Прокрутил рекламы более чем на 50000$ Ежедневно продаю более 150 физический товаров притом, что трафик на рекламу<span class="_break _hide-tablet"></span> лью сам!</div>
+            </div>
+        </div>
+        <div class="you-get">
+            <div class="you-get__logo">
+                После прохождения<span class="_break"></span>бесплатного<span class="_break _hide-tablet _hide-desktop"></span> видеокурса<span class="_break _hide-tablet _hide-desktop"></span> ты узнаешь:
+            </div>
+            <div class="you-get__list">
+                <div class="you-get__list-item">В чем суть<span class="_break _hide-desktop"></span> арбитража<span class="_break _hide-mobile _hide-tablet"></span> трафика?</div>
+                <div class="you-get__list-item">Как заработать<span class="_break"></span>на арбитраже трафика?</div>
+                <div class="you-get__list-item">Сколько можно <span class="_break"></span>заработать<span class="_break _hide-mobile _hide-tablet"></span> на товарке?</div>
+                <div class="you-get__list-item">Как стать<span class="_break"></span>арбитражником?</div>
+                <div class="you-get__list-item">С чего начать?</div>
+            </div>
+        </div>
+        <div class="download-now">
+            <div class="download-now__text">Скачай видеокурс сейчас</div>
+            <div class="download-now__text">и получи крутой бонус совершенно бесплатно!</div>
+            <div class="download-now__text">Предложение ограничено! Успей!</div>
+            <div class="download-now__timer">
+                <div class="download-now__timer-field" >
+                    <div class="download-now__timer-field-time" style="border-bottom: 1px solid #a5a6a7">0</div> 
+                    <div class="download-now__timer-field-type">дней</div> 
+                </div>
+                <div class="download-now__timer-field">
+                    <div class="download-now__timer-field-time" id="hours">9</div> 
+                    <div class="download-now__timer-field-type">часов</div> 
+                </div>
+                <div class="download-now__timer-field">
+                    <div class="download-now__timer-field-time" id="mins">34</div> 
+                    <div class="download-now__timer-field-type">минут</div> 
+                </div>
+                <div class="download-now__timer-field">
+                    <div class="download-now__timer-field-time" id="secs">11</div> 
+                    <div class="download-now__timer-field-type">секунд</div> 
+                </div>   
+            </div>
+            <form class="_download-now" action="">
+                    <input class="_download-now" type="text" placeholder="введите ваш email">
+                    <button class="_download-now" type="submit">Скачать видео курс</button>
+                </form> 
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__text">
+                    <span style="color:#f99406;">“ШКОЛА ТРАФИКА"</span> - школа товарного 
+                    арбитража трафика Артура Гарнаева (с) 2016
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+var hours = 9,
+    mins = 34,
+    secs = 11,
+    hoursField =  document.getElementById("hours"),
+    minsField =  document.getElementById("mins"),
+    secsField =  document.getElementById("secs");
+
+
+
+function timer() {
+    if (hours == 0 && mins == 0 && secs == 0) {
+        hours = 9;
+        mins = 34;
+        secs = 10;
+    }
+
+    if(secs > 0) {
+        secs--;
+        secsField.textContent = secs;
+    }
+    else {
+        secs = 59;
+        secsField.textContent = secs;
+        if(mins > 0) {
+            mins--;
+            minsField.textContent = mins;
+        }
+        else {
+            mins = 59;
+            minsField.textContent = mins;
+            if(hours > 0) {
+                hours--;
+                hoursField.textContent = hours;
+            } 
+        }
+    }
+}
+
+setInterval(timer,1000);
+</script>
+</html>
