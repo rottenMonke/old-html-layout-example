@@ -1,4 +1,3 @@
 # azakaWow.github.io
 
-
-Just a layout example
+How I used to make layouts in the very beginning of my front end journey.
